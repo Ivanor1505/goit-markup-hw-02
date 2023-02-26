@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WEBSTUDIO</title>
-    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,31 +13,39 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Шапка сайту -->
     <header class="page-header">
       <!-- Навігація -->
-      <nav>
-        <a href="./index.html" class="logo"><span>Web</span>Studio</a>
-        <ul class="site-nav">
-          <li><a href="">Studio</a></li>
-          <li><a href="">Portfolio</a></li>
-          <li><a href="">Contacts</a></li>
+      <nav class="site-nav">
+        <a href="./index.html" class="logo link"><span>Web</span>Studio</a>
+        <ul class="list">
+          <li><a class="link" href="./index.html">Studio</a></li>
+          <li><a class="link" href="./portfolio.html">Portfolio</a></li>
+          <li><a class="link" href="">Contacts</a></li>
         </ul>
       </nav>
       <!-- Котактні данні -->
       <address class="address">
-        <ul>
-          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+        <ul class="list">
+          <li>
+            <a class="link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+          </li>
         </ul>
       </address>
     </header>
     <main>
       <!-- Кнопки фільтри -->
       <section>
-        <ul>
+        <h2>Buttons</h2>
+        <ul class="list">
           <li><button type="button">All</button></li>
           <li><button type="button">Web Site</button></li>
           <li><button type="button">App</button></li>
@@ -48,7 +55,8 @@
       </section>
       <!-- Список можливостей -->
       <section>
-        <ul>
+        <h2>List</h2>
+        <ul class="list">
           <li>
             <img
               src="./images/portfolio_img/img-1.jpg"
@@ -144,7 +152,7 @@
     </main>
     <!-- Підвал -->
     <footer>
-      <a href="./index.html">WebStudio</a>
+      <a href="./index.html" class="logo link"><span>Web</span>Studio</a>
       <p>
         Increase the flow of customers and sales for your business with digital
         marketing & growth solutions.

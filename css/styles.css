@@ -3,53 +3,77 @@
     --primery-brand-color: #4D5AE5;
     --pressed-state-color: #404BBF;
     --dark-color: #2E2F42;
+    --succes-color: #31D0AA;
+    --text-color: #434455;
+    --subtle-text-color: #8E8F99;
+    --accent-color: #E7E9FC;
+    --light-color: #F4F4FD;
+    --modal-overlay-color: #2E2F42;
+    --hero-background-color: #2E2F42;
 }
 
-ul {
+.list {
     list-style: none;
 }
 
-a {
+.link {
     text-decoration: none;
 }
 
 body {
     background-color: #E5E5E5;
-    color: #434455;
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
 }
 
-h2,
-h3 {
+.section-title .item-tiyle {
     color: var(--dark-color);
 }
 
 
-
+/*Стилі для index.html */
 /* Щапка сайту */
 .page-header {
     background-color: #FFFFFF;
 }
 
 .logo {
+    font-family: 'Raleway', sans-serif;
     color: var(--dark-color);
     text-transform: uppercase;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
 }
 
 .logo:hover {
-    color: #4D5AE5;
+    color: var(--pressed-state-color);
+    contact
 }
 
 .logo>span {
-    color: #4D5AE5;
+    color: var(--primery-brand-color);
 }
 
+/* Навігація */
 .site-nav a {
     color: var(--dark-color);
 }
 
 .site-nav a:hover,
 .site-nav a:focus {
-    color: #000000;
+    color: var(--pressed-state-color);
+}
+
+/* Контактні данні */
+.contact a {
+    color: var(--text-color);
+}
+
+.contact a:hover,
+.contact a:focus {
+    color: var(--pressed-state-color);
 }
 
 /* Основний контент */
@@ -70,3 +94,5 @@ h1 {
 }
 
 /* Секція перелік переваг */
+
+/* Стилі для portfolio.html */
