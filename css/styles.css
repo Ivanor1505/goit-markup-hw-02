@@ -1,3 +1,10 @@
+/* Загальні стилі */
+:root {
+    --primery-brand-color: #4D5AE5;
+    --pressed-state-color: #404BBF;
+    --dark-color: #2E2F42;
+}
+
 ul {
     list-style: none;
 }
@@ -6,4 +13,60 @@ a {
     text-decoration: none;
 }
 
+body {
+    background-color: #E5E5E5;
+    color: #434455;
+}
+
+h2,
+h3 {
+    color: var(--dark-color);
+}
+
+
+
 /* Щапка сайту */
+.page-header {
+    background-color: #FFFFFF;
+}
+
+.logo {
+    color: var(--dark-color);
+    text-transform: uppercase;
+}
+
+.logo:hover {
+    color: #4D5AE5;
+}
+
+.logo>span {
+    color: #4D5AE5;
+}
+
+.site-nav a {
+    color: var(--dark-color);
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+    color: #000000;
+}
+
+/* Основний контент */
+
+/* Секція герой */
+.hero {
+    background-color: var(--dark-color);
+}
+
+h1 {
+    color: #FFF;
+}
+
+.button {
+    color: #FFFFFF;
+    background-color: #4D5AE5;
+
+}
+
+/* Секція перелік переваг */
