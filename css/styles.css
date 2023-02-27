@@ -24,7 +24,6 @@ body {
     background-color: #E5E5E5;
     color: var(--text-color);
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -173,11 +172,11 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    cursor: pointer;
 }
 
 .list-item>button:hover,
 .list-item>button:focus {
     background-color: var(--pressed-state-color);
     color: #FFFFFF;
-    cursor: pointer;
 }
