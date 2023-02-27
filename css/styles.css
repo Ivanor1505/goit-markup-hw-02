@@ -1,4 +1,4 @@
-/* Загальні стилі */
+/* =========== ЗАГАЛЬНІ СТИЛІ ========== */
 :root {
     --primery-brand-color: #4D5AE5;
     --pressed-state-color: #404BBF;
@@ -25,15 +25,31 @@ body {
     color: var(--text-color);
     font-family: 'Roboto', sans-serif;
     font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
-.section-title .item-tiyle {
+.section-title {
     color: var(--dark-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+}
+
+.item-title {
+    color: var(--dark-color);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
 }
 
 
-/*Стилі для index.html */
-/* Щапка сайту */
+/*=========== СТИЛІ ДЛЯ index.html ========== */
+/* =========== ШАПКА САЙТУ ========== */
 .page-header {
     background-color: #FFFFFF;
 }
@@ -45,9 +61,11 @@ body {
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
+    letter-spacing: 0.03em;
 }
 
-.logo:hover {
+.logo:hover,
+.logo:focus {
     color: var(--pressed-state-color);
     contact
 }
@@ -56,43 +74,118 @@ body {
     color: var(--primery-brand-color);
 }
 
-/* Навігація */
-.site-nav a {
+.logo>span:hover,
+.logo>span:focus {
     color: var(--dark-color);
 }
 
+/* =========== НАВІГАЦІЯ ========== */
+.site-nav a {
+    color: var(--dark-color);
+    font-weight: 500;
+}
+
 .site-nav a:hover,
-.site-nav a:focus {
+.site-nav a:focus,
+.contacts a:hover,
+.contacts a:focus {
     color: var(--pressed-state-color);
 }
 
-/* Контактні данні */
-.contact a {
+/* =========== КОНТАКТНІ ДАННІ ========== */
+.contacts a {
     color: var(--text-color);
 }
 
-.contact a:hover,
-.contact a:focus {
-    color: var(--pressed-state-color);
-}
 
-/* Основний контент */
+/* =========== ОСНОВНИЙ КОНТЕНТ ========== */
 
-/* Секція герой */
+/* =========== СЕКЦІЯ ГЕРОЙ ========== */
 .hero {
-    background-color: var(--dark-color);
+    background-color: var(--hero-background-color);
 }
 
-h1 {
-    color: #FFF;
-}
-
-.button {
+.primary-title {
     color: #FFFFFF;
-    background-color: #4D5AE5;
-
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.071;
+    letter-spacing: 0.02em;
 }
 
-/* Секція перелік переваг */
+.order-button {
+    color: #FFFFFF;
+    background-color: var(--primery-brand-color);
+    cursor: pointer;
+    width: 169px;
+    height: 56px;
+    left: 636px;
+    top: 428px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
 
-/* Стилі для portfolio.html */
+.order-button:hover,
+.order-button:focus {
+    background-color: var(--pressed-state-color);
+}
+
+/* =========== ПЕРЕЛІК ПЕРЕВАГ ========== */
+.preference>h2 {
+    opacity: 0;
+}
+
+/* =========== НАШІ ПРОЕКТИ ==========  */
+
+/* =========== ЧЛЕНИ КОМАНДИ ========== */
+.team {
+    background-color: var(--light-color);
+}
+
+/* =========== ПІДВАЛ ========== */
+.page-footer {
+    background-color: var(--modal-overlay-color);
+    color: var(--accent-color);
+}
+
+.page-footer>a {
+    color: var(--light-color);
+}
+
+.page-footer span:hover,
+.page-footer span:focus {
+    color: var(--light-color);
+}
+
+/* =========== СТИЛІ ДЛЯ portfolio.html ========= */
+
+/* ========== Кнопки фільтри ========== */
+.filter-button>h1,
+.filter-button>h2 {
+    opacity: 0;
+}
+
+.list-item>button {
+    width: 112px;
+    height: 48px;
+    background-color: var(--light-color);
+    color: var(--primery-brand-color);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+}
+
+.list-item>button:hover,
+.list-item>button:focus {
+    background-color: var(--pressed-state-color);
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+/* ========== Список можливостей ========= */
+.capability>h2 {
+    opacity: 0;
+}
