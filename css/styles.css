@@ -24,7 +24,6 @@ body {
     background-color: #E5E5E5;
     color: var(--text-color);
     font-family: 'Roboto', sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -36,7 +35,7 @@ body {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
-    letter-spacing: 0.02em;
+    text-align: center;
 }
 
 .item-title {
@@ -44,7 +43,6 @@ body {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-    letter-spacing: 0.02em;
 }
 
 
@@ -67,7 +65,6 @@ body {
 .logo:hover,
 .logo:focus {
     color: var(--pressed-state-color);
-    contact
 }
 
 .logo>span {
@@ -110,11 +107,13 @@ body {
     font-weight: 700;
     font-size: 56px;
     line-height: 1.071;
-    letter-spacing: 0.02em;
+    text-align: center;
 }
 
 .order-button {
     color: #FFFFFF;
+    font-family: inherit;
+
     background-color: var(--primery-brand-color);
     cursor: pointer;
     width: 169px;
@@ -148,30 +147,28 @@ body {
     color: var(--accent-color);
 }
 
-.page-footer>a {
-    color: var(--light-color);
-}
-
+.page-footer>a,
 .page-footer span:hover,
 .page-footer span:focus {
     color: var(--light-color);
 }
 
-/* =========== СТИЛІ ДЛЯ portfolio.html ========= */
 
-/* ========== Кнопки фільтри ========== */
-.filter-button>h1,
-.filter-button>h2 {
+/* =========== СТИЛІ ДЛЯ portfolio.html ========= */
+/* ========== Список можливостей ========= */
+
+.capability>h1,
+.capability>h2 {
     opacity: 0;
 }
 
 .list-item>button {
     width: 112px;
     height: 48px;
+
     background-color: var(--light-color);
     color: var(--primery-brand-color);
-    font-family: 'Roboto';
-    font-style: normal;
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -183,9 +180,4 @@ body {
     background-color: var(--pressed-state-color);
     color: #FFFFFF;
     cursor: pointer;
-}
-
-/* ========== Список можливостей ========= */
-.capability>h2 {
-    opacity: 0;
 }
