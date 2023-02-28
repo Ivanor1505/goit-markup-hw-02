@@ -64,30 +64,30 @@ body {
     color: var(--pressed-state-color);
 }
 
-.logo>span {
+.part-logo {
     color: var(--primery-brand-color);
 }
 
-.logo>span:hover,
-.logo>span:focus {
+.part-logo:hover,
+.part-logo:focus {
     color: var(--dark-color);
 }
 
 /* =========== НАВІГАЦІЯ ========== */
-.site-nav a {
+.site-nav .link {
     color: var(--dark-color);
     font-weight: 500;
 }
 
-.site-nav a:hover,
-.site-nav a:focus,
-.contacts a:hover,
-.contacts a:focus {
+.site-nav .link:hover,
+.site-nav .link:focus,
+.contacts .link:hover,
+.contacts .link:focus {
     color: var(--pressed-state-color);
 }
 
 /* =========== КОНТАКТНІ ДАННІ ========== */
-.contacts a {
+.contacts .link {
     color: var(--text-color);
 }
 
@@ -144,18 +144,22 @@ body {
     color: var(--accent-color);
 }
 
-.page-footer>a,
-.page-footer span:hover,
-.page-footer span:focus {
+.page-footer .link,
+.page-footer .part-logo:hover,
+.page-footer .part-logo:focus {
     color: var(--light-color);
 }
 
+.page-footer .link:hover,
+.page-footer .link:focus {
+    color: var(--primery-brand-color);
+}
 
 /* =========== СТИЛІ ДЛЯ portfolio.html ========= */
 /* ========== Список можливостей ========= */
 
 
-.list-item>button {
+.filter-button {
     width: 112px;
     height: 48px;
 
@@ -169,8 +173,8 @@ body {
     cursor: pointer;
 }
 
-.list-item>button:hover,
-.list-item>button:focus {
+.filter-button:hover,
+.filter-button:focus {
     background-color: var(--pressed-state-color);
     color: var(--primery-bcg-color);
 }
