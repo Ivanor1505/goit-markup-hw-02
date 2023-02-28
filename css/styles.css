@@ -10,6 +10,7 @@
     --light-color: #F4F4FD;
     --modal-overlay-color: #2E2F42;
     --hero-background-color: #2E2F42;
+    --primery-bcg-color: #FFFFFF;
 }
 
 .list {
@@ -21,7 +22,7 @@
 }
 
 body {
-    background-color: #E5E5E5;
+    background-color: var(--primery-bcg-color);
     color: var(--text-color);
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -47,9 +48,6 @@ body {
 
 /*=========== СТИЛІ ДЛЯ index.html ========== */
 /* =========== ШАПКА САЙТУ ========== */
-.page-header {
-    background-color: #FFFFFF;
-}
 
 .logo {
     font-family: 'Raleway', sans-serif;
@@ -102,7 +100,6 @@ body {
 }
 
 .primary-title {
-    color: #FFFFFF;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.071;
@@ -110,8 +107,8 @@ body {
 }
 
 .order-button {
-    color: #FFFFFF;
-    font-family: inherit;
+    color: var(--primery-bcg-color);
+    font-family: 'Roboto', sans-serif;
 
     background-color: var(--primery-brand-color);
     cursor: pointer;
@@ -129,7 +126,7 @@ body {
 }
 
 /* =========== ПЕРЕЛІК ПЕРЕВАГ ========== */
-.preference>h2 {
+.ghost {
     opacity: 0;
 }
 
@@ -156,10 +153,6 @@ body {
 /* =========== СТИЛІ ДЛЯ portfolio.html ========= */
 /* ========== Список можливостей ========= */
 
-.capability>h1,
-.capability>h2 {
-    opacity: 0;
-}
 
 .list-item>button {
     width: 112px;
@@ -167,7 +160,7 @@ body {
 
     background-color: var(--light-color);
     color: var(--primery-brand-color);
-    font-family: inherit;
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -178,5 +171,5 @@ body {
 .list-item>button:hover,
 .list-item>button:focus {
     background-color: var(--pressed-state-color);
-    color: #FFFFFF;
+    color: var(--primery-bcg-color);
 }
